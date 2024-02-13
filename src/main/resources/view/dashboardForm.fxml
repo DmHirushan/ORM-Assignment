@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="dashboardContext" prefHeight="179.0" prefWidth="419.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashboardFormController">
+   <children>
+      <Button layoutX="66.0" layoutY="38.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="73.0">
+         <graphic>
+            <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="56.0" style="-fx-background-color: #7f8c8d;" />
+         </graphic></Button>
+      <ImageView fitHeight="41.0" fitWidth="39.0" layoutX="83.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-customer-100.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnCustomer" layoutX="75.0" layoutY="50.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" opacity="0.0" prefHeight="70.0" prefWidth="56.0" style="-fx-background-color: #7f8c8d;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>
