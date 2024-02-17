@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="515.0" prefWidth="697.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UpdateCustomerFormController">
+   <children>
+      <ImageView fitHeight="31.0" fitWidth="40.0" layoutX="25.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-go-back-24.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="26.0" layoutY="18.0" mnemonicParsing="false" onAction="#btnBackOnAction" opacity="0.0" prefHeight="18.0" prefWidth="20.0" text="back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="246.0" layoutY="7.0" prefHeight="42.0" prefWidth="209.0" text="Customer Manage" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="103.0" prefHeight="31.0" prefWidth="107.0" text="First Name :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="233.0" prefHeight="31.0" prefWidth="84.0" text="Age :" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="378.0" layoutY="233.0" prefHeight="31.0" prefWidth="98.0" text="Address :" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="378.0" layoutY="319.0" prefHeight="31.0" prefWidth="84.0" text="Salary :" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="326.0" prefHeight="31.0" prefWidth="126.0" text="Mobile Num -" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="380.0" prefHeight="31.0" prefWidth="84.0" text="Home   :" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="432.0" prefHeight="31.0" prefWidth="84.0" text="Mobile :" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFname" layoutX="162.0" layoutY="103.0" prefHeight="31.0" prefWidth="167.0" />
+      <Label layoutX="376.0" layoutY="103.0" prefHeight="31.0" prefWidth="126.0" text="Middle Name :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMname" layoutX="517.0" layoutY="103.0" prefHeight="31.0" prefWidth="167.0" />
+      <TextField fx:id="txtLname" layoutX="162.0" layoutY="164.0" prefHeight="31.0" prefWidth="167.0" />
+      <Label layoutX="50.0" layoutY="164.0" prefHeight="31.0" prefWidth="98.0" text="LastName :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAge" layoutX="161.0" layoutY="234.0" prefHeight="31.0" prefWidth="167.0" />
+      <TextField fx:id="txtAddress" layoutX="517.0" layoutY="233.0" prefHeight="31.0" prefWidth="167.0" />
+      <TextField fx:id="txtSalary" layoutX="518.0" layoutY="317.0" prefHeight="31.0" prefWidth="167.0" />
+      <TextField fx:id="txtHomeNumber" layoutX="225.0" layoutY="380.0" prefHeight="31.0" prefWidth="167.0" />
+      <TextField fx:id="txtMobileNumber" layoutX="225.0" layoutY="433.0" prefHeight="31.0" prefWidth="167.0" />
+      <Button layoutX="598.0" layoutY="470.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="84.0" style="-fx-background-color: #e67e22;" text="Update" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="54.0" layoutY="58.0" prefHeight="31.0" prefWidth="62.0" text="ID" textFill="#ff9b9b">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="162.0" layoutY="58.0" onAction="#txtIdOnAction" prefHeight="31.0" prefWidth="167.0" promptText="Enter Customer Id &amp; Press Emter" />
+      <Button layoutX="502.0" layoutY="470.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="31.0" prefWidth="84.0" style="-fx-background-color: #e74c3c;" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

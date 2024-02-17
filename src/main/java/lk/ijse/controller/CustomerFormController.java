@@ -29,6 +29,11 @@ public class CustomerFormController {
     public TextField txtFname;
     public TextField txtMname;
     public TextField txtLname;
+    public TextField cusId;
+
+    public void initialize(){
+
+    }
 
     public CustomerFormController() throws IOException {
     }
@@ -42,7 +47,7 @@ public class CustomerFormController {
         Transaction transaction = session.beginTransaction();
         System.out.println(txtHomeNumber.getText());
         MobileNumber mobileNumber = new MobileNumber("Home", txtHomeNumber.getText());
-        MobileNumber mobileNumber1 = new MobileNumber("Mobile", txtHomeNumber.getText());
+        MobileNumber mobileNumber1 = new MobileNumber("Mobile", txtMobileNumber.getText());
         List<MobileNumber> mobileNumberList = new ArrayList<>();
         mobileNumberList.add(mobileNumber);
         mobileNumberList.add(mobileNumber1);
@@ -56,5 +61,13 @@ public class CustomerFormController {
         session.save(customer);
         transaction.commit();
         session.close();
+    }
+
+    public void btnUpdateOnAction(ActionEvent actionEvent) throws IOException {
+        new Ui().setUi("updateCustomerForm", actionEvent);
+    }
+
+    public void btnViewOnAction(ActionEvent actionEvent) throws IOException {
+        new Ui().setUi("showCustomerForm", actionEvent);
     }
 }
